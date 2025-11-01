@@ -2,6 +2,18 @@
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		// Replace this comment with your code
+		int lim = Integer.parseInt(args[0]);
+		int a = (int)(Math.random() * (lim + 1));
+		int b = (int)(Math.random() * (lim + 1));
+		int c = (int)(Math.random() * (lim + 1));
+		System.out.print(a + " ");
+		System.out.print(b + " ");
+		System.out.println(c);
+		int min = Math.min(a, Math.min(b, c));
+		int max = Math.max(a, Math.max(b, c));
+		int mid = Math.max(Math.min(a, b), Math.min(Math.max(a, b), c));
+		System.out.print(min + " ");
+		System.out.print(mid + " ");
+		System.out.println(max);
 	}
 }
